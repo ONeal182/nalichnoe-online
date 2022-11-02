@@ -1,0 +1,277 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.lk_container {
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lk_wrapper {
+    width: 1350px;
+
+    margin: 60px 60px 60px 60px;
+}
+
+.lk_title h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 41px;
+}
+
+.lk_content_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 1px solid #C0C0C0;
+    color: #404579;
+    padding-bottom: 35px;
+    margin-bottom: 42px;
+}
+
+.lk_content {
+    background-color: white;
+}
+
+.lk_content_wrapper {
+    padding-top: 33px;
+    margin: 0px 137px 50px 39px;
+}
+
+.lk_content_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lk_content_main-left,
+.lk_content_main-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(50% - 69.5px);
+}
+
+.lk_content_main_table {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.lk_content_main_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(68, 72, 123, 0.2);
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+}
+
+.lk_content_main_tabel_label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.lk_content_main_table:first-child {
+    padding-top: 0px;
+}
+
+.lk_content_main_table:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.lk_content_main_tabel_number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.lk_content_main_wrapper-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+
+    color: #404579;
+}
+
+.lk_content_main_wrapper-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #42477A;
+    border-radius: 24px;
+    padding: 17px 50px;
+    margin-top: 17px;
+}
+
+.lk_bottom {
+    background-color: white;
+    padding: 40px 180px;
+}
+
+.lk_bottom h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+
+    color: #404579;
+    margin-bottom: 28px;
+}
+
+.lk_bottom_content_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 190px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.lk_bottom_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lk_bottom_wrapper {
+    display: flex;
+    width: calc(50% - 16px);
+    border-radius: 5px;
+
+}
+
+.addCard {
+    background: #42477A;
+}
+
+.addPhoto {
+    background: #FD9F22;
+}
+
+.lk_bottom_content_button p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
