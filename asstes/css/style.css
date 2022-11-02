@@ -275,3 +275,126 @@ body {
 
     color: #FFFFFF;
 }
+
+
+/* popap */
+
+.popap_container {
+    background-color: white;
+    max-width: 1142px;
+}
+
+.popap_content_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popap_content_main-left,
+.popap_content_main-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc(50% - 165.5px);
+}
+
+.popap_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 24px 57px;
+    background: #444971;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    color: white;
+}
+
+.popap_content {
+    padding: 63px 105px;
+}
+
+.popap_content_main_table {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #000000;
+}
+
+.popap_content_main_table:last-child {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.popap_content_main_tabel_label {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #515151;
+}
+
+.popap_content_main_tabel_number {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #515151;
+}
+
+.popap_content_main_button {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    background: #EA0001;
+    border-radius: 10px;
+    padding: 19px 68px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.popap_content_main_date {
+    color: #EA0001;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+
+    color: #EA0001;
+}
+
+.popap_content_main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popap_content_main_wrapper {
+    height: 110px;
+}
